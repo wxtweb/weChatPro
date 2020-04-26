@@ -1,0 +1,5 @@
+<view class="yys_login">
+ <view class="login_btn_wrap">
+    <button plain open-type="getUserInfo" bindgetuserinfo="handlegetUserInfo" class="login_btn">登录</button>
+ </view>
+</view>

@@ -1,0 +1,97 @@
+<view class="yys_user">
+  <view class="user_header">
+    <view class="user_login" wx:if="{{!userinfo}}">
+      <navigator url="/pages/login/login">登录</navigator>
+    </view>
+    <view class="user_info_wrap" wx:else>
+      <view class="user_info">
+        <view class="info_image">
+          <image mode="widthFix" src="{{userinfo.avatarUrl}}" />
+       </view>
+        <view class="info_name">{{userinfo.nickName}}</view>
+    </view>
+    <view class="User_note">
+      <view class="note_welcome">亲，欢迎光临云衣裳！</view>
+      <view class="nort_message">版本 1.0.102</view>
+    </view>
+    </view>
+  </view>
+  <view class="user_order">
+    <view class="order_title">
+      <view class="order_my">我的订单</view>
+      <view class="order_all">
+        <navigator url="/pages/order/order?type=1">查看全部订单 > </navigator>
+      </view>
+    </view>
+    <view class="order_status">
+      <navigator url="/pages/order/order?type=2" class="status_item">
+        <view class="iconfont icon-order"></view>
+        <view>待付款</view>
+      </navigator>
+      <navigator url="/pages/order/order?type=3" class="status_item">
+        <view class="iconfont icon-fenlei"></view>
+        <view>待发货</view>
+      </navigator>
+      <navigator url="/pages/order/order?type=4" class="status_item">
+        <view class="iconfont icon-receipt-address"></view>
+        <view>待收货</view>
+      </navigator>
+      <navigator url="/pages/order/order?type=5" class="status_item">
+        <view class="iconfont icon-order"></view>
+        <view>待评价</view>
+      </navigator>
+      <navigator class="status_item">
+        <view class="iconfont icon-tui"></view>
+        <view>退货款</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="user_server">
+    <view class="server_title">我的服务</view>
+    <view class="server_list">
+      <navigator class="status_item">
+        <view class="iconfont icon-order"></view>
+        <view>优惠券</view>
+      </navigator>
+      <navigator class="status_item" url="/pages/collect/collect">
+        <view class="iconfont icon-shoucang">({{collectNum}})</view>
+        <view>商品收藏</view>
+      </navigator>
+      <navigator class="status_item">
+        <view class="iconfont icon-fenlei"></view>
+        <view>历史浏览</view>
+      </navigator>
+      <navigator class="status_item">
+        <view class="iconfont icon-receipt-address"></view>
+        <view>地址管理</view>
+      </navigator>
+    </view>
+    <view class="server_list">
+      <navigator class="status_item">
+        <view class="iconfont icon-kefu"></view>
+        <view>服务政策</view>
+      </navigator>
+      <navigator class="status_item">
+        <view class="iconfont icon-kefu"></view>
+        <view>官方客服</view>
+      </navigator>
+      <navigator class="status_item">
+        <view class="iconfont icon-kefu"></view>
+        <view>地址</view>
+      </navigator>
+      <navigator class="status_item">
+        <view class="iconfont icon-wode"></view>
+        <view>账户设置</view>
+      </navigator>
+    </view>
+      
+    
+  </view>
+  <view class="user_other_wrap">
+    <view class="user_feedback">
+      <navigator url="/pages/feedback/feedback">意见反馈</navigator>
+    </view>
+    <view class="user_about">关于我们</view>
+    <view class="user_share">推荐给其他人</view>
+  </view>
+</view>

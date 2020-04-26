@@ -1,0 +1,58 @@
+page{
+  background-color: #fafafa;
+  color: #666;
+}
+.feedback_main{
+  padding: 10rpx;
+  
+}
+.feedback_title{}
+.feedback_tips{
+  padding: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.feedback_tips text{
+   width: 30%;
+   padding: 6rpx 4rpx;
+   text-align: center;
+   background-color: #f3f3f3;
+   margin: 10rpx 4rpx;
+}
+.feedback_content{
+  
+  margin: 10rpx;
+}
+.feedback_content textarea{
+  width: 97%;
+  background-color: #fff;
+  padding: 10rpx;
+}
+.feedback_tool{
+  display: flex;
+  flex-wrap: wrap;
+}
+.feedback_tool button{
+  width: 87rpx;
+  height: 87rpx;
+  color: #666;
+  font-size: 40rpx;
+  margin: 0 14rpx 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18rpx;
+}
+.feedback_btn{
+  margin-top: 18rpx;
+}
+
+
+
+
+
+
+
+
+

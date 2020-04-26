@@ -1,0 +1,105 @@
+.user_info_wrap {
+  background-color: #4d312d;
+  color: #fff;
+  width: 100%;
+  height: 17vh; 
+}
+.user_info{
+  padding: 10rpx 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+.user_logo {
+
+}
+.info_image{
+  flex:1;
+}
+.info_image image{
+  border-radius: 50%;
+}
+.info_name {
+  flex:5;
+  margin-left: 60rpx;
+}
+.User_note {
+  background-color:#2b1c15;
+  color: #9a8b84;
+  padding: 10rpx 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.note_welcome{ flex: 1;}
+.nort_message{flex: 1; text-align: right;}
+.user_login {
+  background-color: #4d312d;
+  color: #fff;
+  width: 100%;
+  height: 17vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user_login navigator {
+  border: 1px solid #fff;
+  padding: 20rpx 40rpx;
+  border-radius: 10rpx;
+}
+.user_order, .user_server{
+  width: 100%;
+  color: #666;
+  border-bottom: 20rpx solid #f3f3f3;
+  font-size: 32rpx;
+}
+.user_order{}
+.order_title, .server_title{
+  display: flex;
+ 
+  font-size: 34rpx;
+  padding: 40rpx 30rpx;
+}
+.order_my{
+  flex: 1;
+}
+.order_all{
+  flex: 1;
+  text-align: right;
+  color: #999;
+  font-size: 32rpx;
+}
+.order_status, .server_list{
+  width: 100%;
+  display: flex;
+}
+.status_item{
+  flex: 1;
+  display: flex;
+  height: 200rpx;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 40rpx 0;
+  border-top: 1px solid #f3f3f3;
+}
+
+.user_server{}
+.server_title{
+ 
+}
+.server_list{}
+
+.user_other_wrap{}
+.user_feedback, .user_about, .user_share{ 
+  padding: 20rpx 30rpx;
+  border-bottom: 6rpx solid #f3f3f3;
+  color: #666;
+  }
+.user_about{}
+.user_share{}
+
+
+
+

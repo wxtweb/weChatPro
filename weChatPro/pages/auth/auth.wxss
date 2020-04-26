@@ -1,0 +1,8 @@
+.createorder_btn_wrap{
+  color: #4d3126;
+  padding: 20rpx;
+}
+.createorder_btn{
+  width: 60%;
+  
+}

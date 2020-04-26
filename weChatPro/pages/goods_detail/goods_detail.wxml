@@ -1,0 +1,58 @@
+<view class="yys_goodsDetail">
+  <view class="detail_swiper">
+    <swiper autoplay interval="3000" circular indicator-dots indicator-active-color="#4d3126" >
+      <swiper-item wx:for="{{goodsDetail.pics}}" wx:key="pics_id" bindtap="handlePreviewImage" data-url="{{item.pics_big}}">
+        <image mode="widthFix" src="{{item.pics_big}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="detail_content">
+    <view class="goods_price_wrap">
+      <view class="goods_price">
+        <text class="price_type">￥</text>
+        <text class="price_new">{{goodsDetail.goods_price}}</text>
+        <text class="price_activity ">活动价</text>
+        <text class="price_old">￥{{goodsDetail.goods_price}}</text>
+      </view>
+      <view class="goods_share">
+        <text class="iconfont icon-wode"></text>
+        <view class="share_text">分享</view>
+        <button open-type="share"></button>
+      </view>
+    </view>
+    <view class="goods_name_wrap">
+      <view class="goods_name">{{goodsDetail.goods_name}}</view>
+      <view class="goods_collect" bindtap="handleCollect">
+         <text class="iconfont {{isCollect?'icon-shoucang actived':'icon-shoucang'}}"></text>
+        <view class="collect_text">收藏</view>
+      </view>
+    </view>
+    <view class="goods_info">
+      <view class="info_title">图文详情</view>
+      <view class="info_content">
+        <rich-text nodes="{{goodsDetail.goods_introduce}}"></rich-text>
+      </view>
+    </view>
+  </view>
+  <view class="btm_tool">
+    <view class="tool_item">
+      <view class="iconfont icon-kefu"></view>
+      <view>客服</view>
+      <button open-type="contact"></button>
+    </view>
+    <navigator class="tool_item" open-type="switchTab" url="/pages/index/index">
+      <view class="iconfont icon-shouye"></view>
+      <view>首页</view>
+    </navigator>
+    <navigator class="tool_item" open-type="switchTab" url="/pages/cart/cart">
+      <view class="iconfont icon-gouwuche02"></view>
+      <view>购物车</view>
+    </navigator>
+    <view class="btn_cart" bindtap="handleCartAdd">
+      <view>加入购物车</view>
+    </view>
+    <view class="btn_buy">
+      <view>立即购买</view>
+    </view>
+  </view>
+</view>

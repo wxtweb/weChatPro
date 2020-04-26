@@ -1,0 +1,8 @@
+.login_btn_wrap{
+  color: #4d3126;
+  padding: 20rpx;
+}
+.login_btn_wrap{
+  width: 60%;
+  margin: 0 auto;
+}

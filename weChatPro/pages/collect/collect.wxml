@@ -1,0 +1,13 @@
+<view class="yys_collect">
+  <Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+    <navigator class="cllect_item" wx:for="{{collect}}" wx:key="goods_id" url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}">
+      <view class="item_img">
+         <image mode ="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4149550277,3338038883&fm=15&gp=0.jpg'}}"></image>
+      </view>
+      <view class="item_content">
+        <view class="item_title">{{item.goods_name}}</view>
+        <view class="item_price">￥{{item.goods_price}}</view>
+      </view>
+    </navigator>
+  </Tabs>
+</view>

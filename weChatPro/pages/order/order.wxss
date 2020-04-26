@@ -1,0 +1,30 @@
+.order_main{
+
+}
+.order_item{
+  border-bottom: 1px solid #f3f3f3;
+  padding: 20rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+.order_num,.order_price,.order_date{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rpx;
+}
+.num_text,.price_text,.date_text{
+ 
+  
+}
+.num_num,.price_price,.date_data{
+ 
+}
+.price_price{
+  color: #b61d22;
+}
+
+
+
+

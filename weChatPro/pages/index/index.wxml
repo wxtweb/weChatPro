@@ -1,0 +1,37 @@
+<view class="yys_index">
+  <SearchInput></SearchInput>
+<!-- 轮播图 -->
+  <view class="index_swiper">
+    <swiper autoplay="true" interval="3000" circular indicator-dots indicator-active-color="#4d3126">
+      <swiper-item wx:for="{{swiperList}}" wx:key="goods_id" >
+        <navigator url="{{item.navigator_url}}">
+          <image src="{{item.image_src}}" mode="widthFix"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+<!-- 分类 -->
+  <view class="index_cates">
+    <navigator wx:for="{{catesList}}" wx:key="name" >
+      <navigator url="/pages/category/category" open-type="switchTab">
+        <image src="{{item.image_src}}" mode="widthFix"></image>
+      </navigator>
+    </navigator>
+  </view>
+<!-- 楼层 -->
+  <view class="index_floor">
+    <view class="floor_group" wx:for="{{floorList}}" wx:key="floor_title" wx:for-item="item1" wx:for-index="index1">
+      <view class="floor_title">
+        <image src="{{item1.floor_title.image_src}}" mode="widthFix"></image>
+      </view>
+      <view class="floor_list">
+        <navigator url="/pages/goods_list/goods_list?query=心动"  wx:for="{{item1.product_list}}" wx:key="name" wx:for-item="item2" wx:for-index="index2">
+          <image src="{{item2.image_src}}" mode="{{index2===0?'widthFix':'scaleToFill'}}"/>
+        </navigator>
+      </view>
+    </view>
+  </view>
+      
+      
+</view>
+  

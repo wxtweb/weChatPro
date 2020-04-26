@@ -1,0 +1,38 @@
+.cllect_item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30rpx 20rpx;
+  color: #666;
+  background-color: #fafafa;
+  border-bottom: 10rpx solid #fff;
+}
+.item_img{
+  width:50%;
+  flex: 1;
+}
+.item_content{
+  flex: 2;
+  padding-left: 20rpx;
+  height:150rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item_title{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+}
+.item_price{
+  color: #b61d22
+}
+
+
+
+
+
+
+
+

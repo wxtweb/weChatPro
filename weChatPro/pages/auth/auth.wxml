@@ -1,0 +1,6 @@
+<view class="yys_createorder">
+  <view class="createorder_btn_wrap">
+     <button plain open-type="getUserInfo" bindgetuserinfo="handlegetUserInfo" class="createorder_btn">获取授权</button>
+  </view>
+ 
+</view>

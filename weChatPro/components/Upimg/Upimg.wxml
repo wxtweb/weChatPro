@@ -1,0 +1,7 @@
+<view class="upimg_wrap">
+   <image src="{{src}}"></image>
+    <view class="upimg_icon">X</view>
+
+
+</view>
+
